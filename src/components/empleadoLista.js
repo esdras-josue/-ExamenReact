@@ -11,12 +11,12 @@ const ListaEmpleados = ({empleados}) =>(
         </tr>
         </thead>
         <tbody>
-            {empleados.map((emp) =>{
-                <tr key ={empleado.id}>
-                <td>{empleados.nombre}</td>
-                <td>{empleados.dni}</td>
-                <td>{empleados.direccion}</td>
-                <td>{empleados.email}</td>
+            {empleados.map((empleado) =>{
+                <tr key ={worker.id}>
+                <td>{empleado.nombre}</td>
+                <td>{woempleadorker.dni}</td>
+                <td>{empleado.direccion}</td>
+                <td>{empleado.email}</td>
                 </tr> 
             })}
         </tbody>
