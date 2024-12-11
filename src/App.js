@@ -20,6 +20,16 @@ const App =() =>{
     }
   };
 
+  const addEmpleado = async (nuevoEmpleado) =>{
+    try{
+      const response = await axios.post('https://674c84c054e1fca9290cd05f.mockapi.io/api/examen/empleado', nuevoEmpleado);
+      setEmpleados([...empleados, response.data]);
+    }catch (error){
+      console.error('Error añadiendo empelado', error);
+    }
+    
+  };
+
   return(
     <div className="container mt-5">
       <h1 className='text-center'>Lista de Empleados</h1>
