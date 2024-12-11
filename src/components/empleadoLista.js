@@ -12,9 +12,9 @@ const ListaEmpleados = ({empleados}) =>(
         </thead>
         <tbody>
             {empleados.map((empleado) =>{
-                <tr key ={worker.id}>
+                <tr key ={empleado.id}>
                 <td>{empleado.nombre}</td>
-                <td>{woempleadorker.dni}</td>
+                <td>{empleado.dni}</td>
                 <td>{empleado.direccion}</td>
                 <td>{empleado.email}</td>
                 </tr> 
